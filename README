@@ -1,0 +1,17 @@
+#Author: Sleepingisimportant (GitHub)
+#Version: v.1
+#Upload: 24.05.2022
+
+
+This program is written to automate the task in such scenario:
+
+You are responsible for maintaining a master data file, and updating the master file every month with the new data you get from other colleagues or downloaded from the systems, e.g. SAP.
+
+However, it requires a lot of work that you must back and forth between the master file and the input data file and manually compares each item. This program is to be used to automate the process of updating the master file.
+
+This program assumes there is a unique ID between the master and update files. It accesses the ID of all items in the new update file and checks whether it exists in the master file.
+If the ID of an item has existed in the master file, the program will update the "Date" column of the Item with the new input. If not, then a new item will be appended to the master file.
+
+The original master file will be intact. The new master file will be generated with updated content under the same directory.
+
+You should be able to find the example input and output files in the "Example" directory.
